@@ -1,16 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 html,
 body {
   height: 100%;
 }
-
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-
 .appress-pwa-note {
   display: flex;
   flex-direction: column;
@@ -19,16 +16,29 @@ body {
 }
 
 .main {
-  display: flex;
   flex: 1;
+  padding: 0 16px;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 
 mat-card {
-  max-width: 80%;
-  margin: 2em auto;
+  max-width: 80%; 
+  margin: 2em auto; 
   text-align: center;
 }
 
 mat-toolbar-row {
   justify-content: space-between;
+}
+
+.error {
+  color: red;
+  font-size: 0.7rem;
+  padding: 0.5rem;
 }
